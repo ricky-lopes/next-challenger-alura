@@ -1,47 +1,56 @@
-.image_container{
-    height: 407px;
-    background-image: url("../public/images/banner.jfif");
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.content_page {
+    width: 100%;
 }
 
-.image_container h1 {
+.content_page .img{
+    width: 100%;
+    height: 407px;
+    background: url("../public/images/banner.jfif"), #fff;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content_page h1{
     font-family: 'Calistoga';
     font-style: normal;
-    font-weight: bold;
+    font-weight: bolder;
     font-size: 64px;
     line-height: 83px;
     color: #444444;
-}
+}    
 
-.content {
-    padding: 64px;
+.context_page {
     width: 100%;
-    height: 100em;
     background: linear-gradient(180deg, #BFDAE6 0%, #FCF0DD 50%, #FACF9D 100%);
+    padding: 65px 121.5px;
 }
 
 .buy_ticket {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.buy_ticket_image {
+.img_buy_ticket {
+    width: 50%;
+    height: 20em;
     border-radius: 16px;
-    margin-right: 48px;
 }
 
-.infos_ticket {
-    gap: 24px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 27em;
+.infos_ticket h2 {
+    font-family: 'Calistoga';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #444444;
+    text-align: center;
 }
+
 .infos_ticket p {
     text-align: center;
     font-family: 'Raleway';
@@ -49,34 +58,120 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 40px;
-}
-
-.infos_ticket h6 {
-    text-align: center;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 38px;
     color: #444444;
 }
 
-.infos_ticket button {
-    background: #2E7BA2;
-    box-shadow: 4px 4px 0px #444444;
-    border-radius: 16px;
+.center_btn_tickets {
+    display: flex;
+    justify-content: center;
+}
+
+.center_btn_tickets_mt {
+    display: flex;
+    justify-content: center;
+    margin-top: 96px;
+}
+
+.btn_tickets {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    align-items: center;
+    color: #fff;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 40px;
-    color: #fff;
-    align-items: center;
+    background: #2E7BA2;
+    box-shadow: 4px 4px 0px #444444;
+    border-radius: 16px;
     padding: 8px 16px;
     cursor: pointer;
 }
 
-.infos_ticket button:hover {
+.btn_tickets:hover {
+    background: #FFF;
     color: #2E7BA2;
-    background: #fff;
+}
+
+.flex_between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 37px;
+    gap: 32px;
+}
+
+.yellow_label {
+    background: #DF9010;
+    padding: 16px;
+    white-space: nowrap;
+
+    font-family: 'Calistoga';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 62px;
+    color: #FFF;
+}
+
+.yellow_border {
+    width: 100%;
+    height: 0px;
+    border: 1px solid #DF9010;
+}
+
+.shows {
+    margin-top: 48px;
+    width: 100%;
+    gap: 32px;
+}
+
+.bands {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.bands h2 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 56px;
+    color: #444444;
+}
+
+.order_band {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order_band_around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.order_band h6 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 38px;
+    color: #444444;
+    white-space: nowrap;
+
+}
+
+.order_band_around h4 {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 38px;
+    color: #444444;
+    white-space: nowrap;
 }
